@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush Corner</title>
+</head>
+
+<script src="script.js"></script>
+
+<body>
+
+<div id="enter-site" role="dialog" aria-modal="true" aria-label="Entrance to website">
+    <button id="btnEnter" aria-describedby="descEnter">Masuk ke Website</button>
+  </div>
+
+  <main id="home" role="main" aria-label="Home page content with background photo">
+    <div id="overlay" tabindex="0">
+
+
+    <h1>Haiii kamuuu!</h1>
+    <p>ini tempat rahasia dari aku buat kamu yang suka musik, film dan animee 😋</p>
+
+     
+
+   <nav>
+     <button onclick="showsection('nano')">🏠 Home</button>
+     <button onclick="showsection('music')">🎵 Playlist</button>
+     <button onclick="showsection('film')">🎬 Film dan Anime</button>
+     <button onclick="showsection('message')">📫 Pesan</button>
+   </nav>
+
+     <section id="nano">
+          <h2>Haloo kamu yang maniss</h2>
+          <p>Selamat datang di tempat kecil yang aku buat spesial untuk kamuu</p>
+          <ul style="text-align: left; max-width: 400px; margin: auto;">
+               <li> kamu suka musik kan yaa? aku suka banget ngeliat kamu pake headset</li>
+               <li> kamu juga suka nonton film sama animee</li>
+               <li> kamu juga pernah bilang ke aku kalau kamu suka samyang dan matchaa</li>
+               <li> dan kamu.. bikin aku kepikiran teruss hhhh..</li>
+          </ul>
+          <p style="margin-top: 20px;">Semoga kamu suka yaa... 🩵</p>
+     </section>
+
+
+   <section id="music" class="hidden">
+      <h2>Playlist buat kamuu</h2>
+        <p>Ini ada beberapa lagu yang aku suka buat kamuu</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/playlist/1Q5hm3UvDx4NuLgmQEV9j1?si=9f20a04651fa4855" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+   </section>
+
+   <section id="film" class="hidden">
+        <h2>Rekomendasi Film/Anime</h2>
+        <ul>
+            <li><strong>Tensei Shitara Slime Datta ken</strong> - Anime rapat yang seru abiess</li>
+            <li><strong>Your Name</strong> - Right person, wrong time. eakkk</li>
+            <li><strong>Tokyo Ghoul</strong> - My paporit animeee</li>
+        </ul>
+   </section>
+
+   <section id="message" class="hidden">
+        <h2> Pesan Rahasiaa</h2>
+        <p>Kamu berharap apa hayoooo? WKWKWK 😜😜</p>
+   </section>
+
+   <script src="script.jss"></script>
+</body>
+
+<script>
+    const enterSite = document.getElementById('enter-site');
+    const homePage = document.getElementById('home');
+    const btnEnter = document.getElementById('btnEnter');
+
+    btnEnter.addEventListener('click', () => {
+      enterSite.style.display = 'none';
+      homePage.style.display = 'block';
+      document.getElementById('overlay').focus();
+    });
+  </script>
+
+</html>

@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    background-color: #fffefc;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffcbcb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffc0cb;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    margin-top: 30px;
+}
+
+
+    body,html {
+      margin: 0; padding: 0; height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #333333;
+    }
+    #home {
+      display: none;
+      height: 100vh;
+      background-color: aliceblue;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(0.85);
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+    #overlay {
+      background: rgba(255 255 255 / 0.85);
+      max-width: 650px;
+      margin: 5rem auto 0 auto;
+      border-radius: 0.75rem;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow:
+        0 4px 6px rgb(0 0 0 / 0.1),
+        0 1px 3px rgb(0 0 0 / 0.06);
+    }
+    p.desc {
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+      color: #555555;
+    }
+    .menu-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .menu-button {
+      background-color: #fbcfe8; /* pastel pink */
+      border-radius: 0.5rem;
+      color: #86198f; /* darker pink/purple */
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.5rem 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      user-select: none;
+    }
+    .menu-button:hover {
+      background-color: #f9a8d4;
+    }
+    .menu-button svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+    .recommendation {
+      font-weight: 700;
+      color: #b91c1c;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .recommend-list {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: black;
+      line-height: 1.3;
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .recommend-list li {
+      margin-bottom: 0.15rem;
+    }
+    .recommend-bold {
+      font-weight: 700;
+    }
+    #enter-site {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      flex-direction: column;
+      gap: 2rem;
+      user-select: none;
+    }
+    #enter-site button {
+      background-color: #fbcfe8;
+      border: none;
+      padding: 1rem 3rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #86198f;
+      border-radius: 10rem;
+      box-shadow:
+        0 4px 6px rgb(0 0 0 / 0.1),
+        0 1px 3px rgb(0 0 0 / 0.06);
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    #enter-site button:hover {
+      background-color: #f9a8d4;
+    }
